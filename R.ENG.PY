@@ -1,6 +1,11 @@
  Recommender system
 #recommendation based on scaled watch time ,Avg Watch Time, share, love & comments score
 
+import pandas as pd
+import numpy as np
+K= pd.read_csv("github.csv")
+K.head(2)
+
 from sklearn import preprocessing
 #The transformation is given by:
 #X_std = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))
